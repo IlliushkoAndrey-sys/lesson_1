@@ -1,0 +1,173 @@
+
+.season_number {
+    position: relative;
+}
+.season_number h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.season_bigcard {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #999;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.bigcard_image {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.season_number p{
+    font-size: 14px;
+    padding-top: 5px;
+    text-align: center;
+}
+.series_location {
+    margin: 0 5px;
+}
+.series_character {
+    margin: 0 5px;
+}
+.series_episode {
+    margin: 0 5px;
+
+}
+.series_status {
+    position: relative;
+}
+.series_status img {
+    width: 35px;
+    height: 35px;
+    left: 0;
+    margin: 0 10px;
+    top: 50%;
+    z-index: 1;
+    position: absolute;
+
+    transform: translateY(-50%);
+}
+
+.series_info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+.series_description {
+    color: #999;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #b8b8b8;
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: opacity 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.dot.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.dot:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.season_inner {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    gap: 30px;
+}
+.season_smallcard {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #999;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4)
+}
+
+.smallcard_title {
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.smallcard_text {
+    padding-top: 5px;
+    font-size: 14px;
+    color: #999;
+}
+.smallcard_text:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+        margin-right: 5px;
+    background: #4CAF50;
+    border-radius: 50%;
+}
+
+
+.season_buttons {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 0;
+    color: transparent;
+
+
+}
+
+.season_buttons--prev {
+    left: -75px;
+
+}
+
+.season_buttons--next {
+    right: -75px;
+
+}
+
+@media (max-width: 1000px) {
+
+    .season_inner {
+        grid-template-columns: repeat(3, 2fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .season_inner {
+        grid-template-columns: repeat(2, 2fr);
+
+
+    }
+}

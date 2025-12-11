@@ -3,11 +3,7 @@
 
 
 }
-.container--characters>h1 {
-    margin-top: 180px;
-    font-size: 48px;
-    margin-bottom: 40px;
-}
+
 
 .characters_inner {
     display: grid;
@@ -19,6 +15,8 @@
 
 .character_card {
     width: 100%;
+    max-width: 330px;
+    max-height: 281px;
     padding-top: 15px;
     padding-bottom: 15px;
     border: 1px solid #999;
@@ -45,6 +43,11 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
+
+.character_card:hover {
+    background: #4CAF50;
+    color: #fff;
 }
 
 @media (max-width: 1000px) {

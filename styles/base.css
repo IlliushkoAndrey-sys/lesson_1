@@ -25,3 +25,10 @@ body {
     margin: 0 auto;
     align-content: center;
 }
+
+.container>h1 {
+    margin-top: 180px;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
