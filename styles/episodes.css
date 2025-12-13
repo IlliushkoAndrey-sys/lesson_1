@@ -167,7 +167,5 @@
 @media (max-width: 750px) {
     .season_inner {
         grid-template-columns: repeat(2, 2fr);
-
-
     }
 }

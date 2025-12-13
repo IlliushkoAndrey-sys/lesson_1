@@ -15,10 +15,9 @@
 
 .location_card {
     width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     max-width: 330px;
-    max-height: 281px;
     border: 1px solid #999;
     border-radius: 12px;
     cursor: pointer;
@@ -67,7 +66,5 @@
 @media (max-width: 750px) {
     .locations_inner {
         grid-template-columns: repeat(2, 2fr);
-
-
     }
 }
